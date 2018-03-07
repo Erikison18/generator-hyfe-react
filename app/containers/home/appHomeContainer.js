@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Layout } from 'antd'
 import { logout } from '@/actions/loginAction'
 import HomeSide from '@/components/home/homeSide'
+import HomeContent from '@/components/home/homeContent'
 import './home.scss'
 
 @connect(null)
@@ -13,7 +15,10 @@ class AppHomeContainer extends Component {
 
   render() {
     return (
-      <HomeSide />
+      <Layout className='content-max'>
+        <HomeSide />
+        <HomeContent />
+      </Layout>
       // <div>
         
       //   {/* App Home Page
