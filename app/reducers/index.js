@@ -2,6 +2,7 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 import LoggedUserReducer from './loggedUserReducer'
+import { radarChartReducer } from './radarChartReducer'
 
 /**
  * 主reducers方法，合并各个子reducer
@@ -10,8 +11,9 @@ import LoggedUserReducer from './loggedUserReducer'
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({
     loggedUser: LoggedUserReducer,
+    radarChart: radarChartReducer,
     routing: routerReducer,
-    ...asyncReducers
+    ...asyncReducers // 这是什么，做什么用的
   })
 }
 

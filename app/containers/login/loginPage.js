@@ -3,8 +3,8 @@
  * @Email: baizhanning@hiynn.com 
  * @Description: 登录测试页面
  * @Date: 2018-03-07 14:43:06 
- * @Last Modified by: baizn
- * @Last Modified time: 2018-03-07 14:43:37
+ * @Last Modified by: zhanghongqiao@hiynn.com
+ * @Last Modified time: 2018-03-08 22:52:16
   */
 
 import React, { Component } from 'react'

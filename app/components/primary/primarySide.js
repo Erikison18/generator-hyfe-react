@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Layout } from 'antd'
-import SiderMenus from './siderMenus'
+import SiderMenus from '../home/siderMenus'
  
-export default class HomeSide extends Component {
+export default class primarySide extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -13,7 +13,6 @@ export default class HomeSide extends Component {
     }
   }
   render() {
-    console.log(this.props)
     return(
       <div>
         <Layout.Sider 

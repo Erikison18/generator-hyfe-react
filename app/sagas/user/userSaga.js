@@ -3,8 +3,8 @@
  * @Email: baizhanning@hiynn.com
  * @Description: 涉及到操作用户的saga
  * @Date: 2018-02-08 14:20:44
- * @Last Modified by: baizn
- * @Last Modified time: 2018-03-06 16:35:57
+ * @Last Modified by: zhanghongqiao@hiynn.com
+ * @Last Modified time: 2018-03-08 17:10:55
   */
 import { call, put, take, takeLatest } from 'redux-saga/effects'
 import { fetch } from '@/util/request'
@@ -26,6 +26,7 @@ const apifetchUser = (username, page) => {
     list: 'xxx'
   })
 }
+
 /**
  * @description 获取用户信息
  * @param {object} action action类型
